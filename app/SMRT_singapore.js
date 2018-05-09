@@ -5,7 +5,7 @@ var scrapeLink = "https://twitter.com/smrt_singapore";
 
 x(scrapeLink , 'div.tweet', [{
   title: 'strong.fullname',
-  tweet: 'tweet-text',
+  tweet: '.tweet-text',
   link: '@data-permalink-path'
 }])
-  .write('SMRT_singapore.json')
+  .write('results/SMRT_singapore.json')

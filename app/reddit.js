@@ -7,4 +7,4 @@ x('https://www.reddit.com/r/singapore/', '.entry', [{
 }])
   .paginate('span.next-button > a@href')
   .limit(5)
-  .write('reddit.json')
+  .write('results/reddit.json')
